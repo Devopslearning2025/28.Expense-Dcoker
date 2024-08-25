@@ -1,10 +1,10 @@
 FROM node:20
 EXPOSE 8080
 RUN useradd expense
-RUN mkdir /opt/app
-RUN chown -R expense:expense /opt/app
-WORKDIR /opt/app
+RUN mkdir /opt/backend
+RUN chown -R expense:expense /opt/backend
+WORKDIR /opt/backend
 COPY package.json .
 COPY *js .
 RUN npm install
-CMD [ "nodes","index.js" ]
+CMD [ "node","index.js" ]
