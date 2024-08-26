@@ -1,7 +1,6 @@
 name: expense
-version: '3.8'
 networks:
-  default: 
+  default:
     name: expense
 volumes:
   mysql: # docker volume crete mysql
