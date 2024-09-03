@@ -10,7 +10,7 @@ RUN mkdir /opt/backend
 RUN chown -R expense:expense /opt/backend
 WORKDIR /opt/backend
 COPY package.json .
-COPY *js /opt/backend
+COPY *js /opt/backend/
 RUN npm install
 #to run the backend with expense and not with root 
 USER expense
