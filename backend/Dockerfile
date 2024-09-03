@@ -12,4 +12,6 @@ WORKDIR /opt/backend
 COPY package.json .
 COPY *js .
 RUN npm install
+#to run the backend with expense and not with root 
+USER expense
 CMD [ "node","index.js" ]
