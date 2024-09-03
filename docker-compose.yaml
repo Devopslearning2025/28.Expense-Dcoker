@@ -4,6 +4,8 @@ networks:
     name: expense
 volumes:
   mysql: # docker volume crete mysql
+    #external: true # if true, you need to create manually
+       # docker volume create myqsl
 services:
   mysql: 
     image: mysql:v1.0
